@@ -13,6 +13,7 @@ def get_text_blob(txt):
     """convert text to TextBlob"""
 
     blob = TextBlob(txt)
+    blob/0
     return blob
 
 
