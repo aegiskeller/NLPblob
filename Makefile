@@ -4,11 +4,11 @@ install:
 		python -m textblob.download_corpora
 
 test:
-	#python3 -m pytest -vv --cov=grabImage test_grabImage.py
-	#python -m pytest --nbval notebook.ipynb
+	python3 -m pytest -vv --cov=corenlp test_corenlp.py
+	
 
 lint:
-	pylint --disable=R,C,E1120 nlpBlob.py
+	pylint --disable=R,C *.py
 
 format: 
 	black *.py
